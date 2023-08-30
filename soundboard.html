@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic soundboard</title>
+    <script type="text/javascript">
+        function play_sound(clicked_id) {
+          var audio = new Audio(clicked_id + ".mp3");
+          audio.play();
+        }
+      </script>
+</head>
+<body>
+    <h1><a href="idkwebsite.html">home</a>
+      <a href="soundboard.html">soundboard</a>
+      <a href="guess my name.html">Guess my number</a></h1>
+    <h1>A Soundboard of Mr Sinclair</h1>
+    <div>
+    <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
+    </div>
+    <button id="hi" onClick="play_sound(this.id)" style="height:500px;width:300px;">hi</button > 
+
+    
+</body>
+</html>
