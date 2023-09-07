@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic soundboard</title>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
         function play_sound(clicked_id) {
           var audio = new Audio(clicked_id + ".mp3");
@@ -12,15 +13,37 @@
       </script>
 </head>
 <body>
-    <h1><a href="idkwebsite.html">home</a>
-      <a href="soundboard.html">soundboard</a>
-      <a href="guess my name.html">Guess my number</a></h1>
-    <h1>A Soundboard of Mr Sinclair</h1>
-    <div>
-    <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
+    <div class="header">
+      <div class="header-center">
+        <a class="active" href="idkwebsite.html">Home</a>
+        <a href="soundboard.html">soundboard</a>
+        <a href="guessmynumber.html">guess my number</a>
+      </div>  
     </div>
-    <button id="hi" onClick="play_sound(this.id)" style="height:500px;width:300px;">hi</button > 
 
-    
+
+    <h1>A Soundboard of Mr Sinclair</h1>
+  
+    <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
+   
+   <button id="hi" onClick="play_sound(this.id)" style="height:90px;width:80px;">hi</button > 
+      <button id="I'm mr sinclair" onClick="play_sound(this.id)" style="height:90px;width:80px;">I'm mr sinclair</button > 
+        <button id="is" onClick="play_sound(this.id)" style="height:90px;width:80px;">is</button > 
+          <button id="mrCliffe" onClick="play_sound(this.id)" style="height:90px;width:80px;">mrCliffe</button >
+            <button id="myboi" onClick="play_sound(this.id)" style="height:90px;width:80px;">myboi</button > 
+              <button id="yas queen" onClick="play_sound(this.id)" style="height:90px;width:80px;">yas queen</button > 
+                <button id="NO!" onClick="play_sound(this.id)" style="height:90px;width:80px;">NO!</button > 
+                  <button id="thisisexcellence" onClick="play_sound(this.id)" style="height:90px;width:80px;">thisisexcellence.</button > 
+                    <button id="getout" onClick="play_sound(this.id)" style="height:90px;width:80px;">getout</button > 
+
+                      <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-a"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid B</a></div> <div class="ui-block-b"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid B</a>‹/div> ‹div class-"ui-block-c"›<a href="#" class-"ui-btn ui-shadow ui-corner-all">Grid B</a›</div>
+                        </div>
+                        <div class="ui-grid-a ui-responsive">
+                        <div class="ui-block-a"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid A</a></div> <div class-"ui-block-b"›<a href="#" class-"ui-btn ui-shadow ui-corner-all"›Grid A</a›</div>
+                        </div> <div class="ui-grid-solo">
+                        ‹div class-"ui-block-a"›<a href="#" class-"ui-btn ui-shadow ui-corner-all">Grid Solo</a>‹/div> </div> <br>
+                        <a href="#" class-"ui-btn ui-corner-all ui-shadow ui-btn-b"›Outside the grid</a>
+
 </body>
 </html>
