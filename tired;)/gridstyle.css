@@ -1,0 +1,25 @@
+/* styles.css */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.button {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #83a0ce;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+.button:hover {
+    background-color: #a2daff;
+}
+
+

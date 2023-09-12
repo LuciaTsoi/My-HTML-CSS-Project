@@ -1,0 +1,32 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Guess My Number Game</title>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            
+          <div class="header">
+            <div class="header-center">
+              <a class="active" href="index.html">Home</a>
+              <a href="soundboard.html">soundboard</a>
+              <a href="guessmynumber.html">guess my number</a>
+            
+            </div>
+            </div>
+          
+            <h1>Guess My Number Game</h1>
+          <p>Guess a number between 1 and 10:</p>
+          <!-- notice how  the input, button and p have an ID?-->
+          <!-- This is so our Javascript can identify these elements and manipulate them-->
+          <input type="number" id="guessField">
+          <button id="guessSubmit">Submit Guess</button>
+          <p id="message"></p>
+          <!-- Much like we link an external CSS sheet here an external javascript is being linked-->
+          <script src="guessmynumber.js"></script>
+        </body>
+        </html>
+
