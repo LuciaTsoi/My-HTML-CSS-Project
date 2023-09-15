@@ -26,7 +26,36 @@
           <button id="guessSubmit">Submit Guess</button>
           <p id="message"></p>
           <!-- Much like we link an external CSS sheet here an external javascript is being linked-->
-          <script src="guessmynumber.js"></script>
+          
         </body>
         </html>
 
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Image</title>
+
+</head>
+<body>
+
+    <div id="image-container">
+        <img src="mr sinclair.png" alt="Image" width="45%" height="auto">
+    </div>
+
+    
+
+    <script>
+        function toggleImage() {
+            var imageContainer = document.getElementById("image-container");
+            if (imageContainer.style.display === "none") {
+                imageContainer.style.display = "block";
+            } else {
+                imageContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<script src="guessmynumber.js"></script>
+</html>

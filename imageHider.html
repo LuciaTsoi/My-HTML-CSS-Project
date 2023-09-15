@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Image</title>
+    <style>
+        #image-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleImage()">Guess Submit</button>
+    <div id="image-container">
+        <img src="mr sinclair.png" alt="Image" width="45%" height="auto">
+    </div>
+
+    <script>
+        function toggleImage() {
+            var imageContainer = document.getElementById("image-container");
+            if (imageContainer.style.display === "none") {
+                imageContainer.style.display = "block";
+            } else {
+                imageContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

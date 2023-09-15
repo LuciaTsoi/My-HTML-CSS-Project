@@ -24,26 +24,62 @@
 
     <h1>A Soundboard of Mr Sinclair</h1>
   
-    <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
    
-   <button id="hi" onClick="play_sound(this.id)" style="height:90px;width:80px;">hi</button > 
-      <button id="I'm mr sinclair" onClick="play_sound(this.id)" style="height:90px;width:80px;">I'm mr sinclair</button > 
-        <button id="is" onClick="play_sound(this.id)" style="height:90px;width:80px;">is</button > 
-          <button id="mrCliffe" onClick="play_sound(this.id)" style="height:90px;width:80px;">mrCliffe</button >
-            <button id="myboi" onClick="play_sound(this.id)" style="height:90px;width:80px;">myboi</button > 
-              <button id="yas queen" onClick="play_sound(this.id)" style="height:90px;width:80px;">yas queen</button > 
-                <button id="NO!" onClick="play_sound(this.id)" style="height:90px;width:80px;">NO!</button > 
-                  <button id="thisisexcellence" onClick="play_sound(this.id)" style="height:90px;width:80px;">thisisexcellence.</button > 
-                    <button id="getout" onClick="play_sound(this.id)" style="height:90px;width:80px;">getout</button > 
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            /* Style for the buttons */
+            .button {
+                height: 90px;
+                width: 80px;
+                text-align: center;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+    
+            /* Additional styles for buttons (optional) */
+            .button:hover {
+                background-color: #2980b9;
+            }
+    
+            /* Define the grid container for buttons */
+            .button-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+                gap: 10px; /* Adjust the gap between buttons */
+            }
+        </style>
+    
+        <script>
+            function play_sound(id) {
+                // Your play_sound function code here
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Wrap the buttons in a container with the grid layout -->
+        <div>
+        <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
 
-                      <div class="ui-grid-b ui-responsive">
-                        <div class="ui-block-a"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid B</a></div> <div class="ui-block-b"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid B</a>‹/div> ‹div class-"ui-block-c"›<a href="#" class-"ui-btn ui-shadow ui-corner-all">Grid B</a›</div>
-                        </div>
-                        <div class="ui-grid-a ui-responsive">
-                        <div class="ui-block-a"></div><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid A</a></div> <div class-"ui-block-b"></div><a href="#" class-"ui-btn ui-shadow ui-corner-all"›Grid A</a›</div>
-                        </div> <div class="ui-grid-solo">
-                        <div class-"ui-block-a"><a href="#" class-"ui-btn ui-shadow ui-corner-all">Grid Solo</a></div> </div> <br>
-                        <a href="#" class-"ui-btn ui-corner-all ui-shadow ui-btn-b"></a>Outside the grid</a>
-
-</body>
-</html>
+        <div class="button-container">
+            <button id="hi" onClick="play_sound(this.id)" class="button">hi</button>
+            <button id="I'm mr sinclair" onClick="play_sound(this.id)" class="button">I'm mr sinclair</button>
+            <button id="is" onClick="play_sound(this.id)" class="button">is</button>
+            <button id="mrCliffe" onClick="play_sound(this.id)" class="button">mrCliffe</button>
+            <button id="myboi" onClick="play_sound(this.id)" class="button">myboi</button>
+            <button id="yas queen" onClick="play_sound(this.id)" class="button">yas queen</button>
+            <button id="NO!" onClick="play_sound(this.id)" class="button">NO!</button>
+            <button id="thisisexcellence" onClick="play_sound(this.id)" class="button">thisisexcellence.</button>
+            <button id="getout" onClick="play_sound(this.id)" class="button">getout</button>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+                      
+                          <link rel="stylesheet" type="text/css" href="gridstyle.css"> <!-- Add this line to link your CSS file -->
+                     
+                      

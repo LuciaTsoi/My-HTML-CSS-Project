@@ -43,4 +43,6 @@ body {
      .header-right {
       float: none;}}
    
-      
+      #image-container {
+        display: hidden;
+    }
