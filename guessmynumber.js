@@ -1,21 +1,14 @@
-// The line of code below generates a random number between 1 and 10.
-// You can change 10 to a higher number to make the game harder.
 const randomNumber = Math.floor(Math.random() * 10) + 1;
-
-// You can change the number below to change how many attempts the user gets.
 let remainingAttempts = 3;
 
-/* The below 4 lines tell JavaScript to look through the HTML document that uses this script.
-   It will look for the elements which have the IDs in the bracket and store them in memory.
-   Additionally, we're getting the image-container element and the img element.
-*/
 const guessField = document.getElementById("guessField");
 const guessSubmit = document.getElementById("guessSubmit");
 const message = document.getElementById("message");
 const imageContainer = document.getElementById("image-container");
-const mrSinclairImage = document.querySelector("#image-container img");
 
-// The remaining code below is the game's logic.
+// Initially hide the image
+imageContainer.style.display = "none";
+
 guessSubmit.addEventListener("click", function () {
   const userGuess = parseInt(guessField.value);
 
@@ -35,6 +28,7 @@ guessSubmit.addEventListener("click", function () {
     }
   }
 });
+
 
 
 //welcome to the Javascript code for guess my number

@@ -1,8 +1,7 @@
-/* styles.css */
 .button-grid {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 40px);
     gap: 10px;
 }
 
@@ -22,4 +21,20 @@
     background-color: #a2daff;
 }
 
+/* Center the image using flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Optional: Set a fixed or relative height for the container to center vertically */
+}
+
+/* Center the image using margin auto */
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    height: 600px;
+    width: 350px;
+}
 

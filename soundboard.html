@@ -3,68 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic soundboard</title>
+    <title>Basic Soundboard</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        function play_sound(clicked_id) {
-          var audio = new Audio(clicked_id + ".mp3");
-          audio.play();
+    <link rel="stylesheet" type="text/css" href="gridstyle.css">
+    <style>
+        /* Center the grid and image */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Optional: Set a fixed or relative height for centering vertically */
         }
-      </script>
+
+        /* Style the header */
+        .header {
+            background-color: #f9dff5;
+            color: rgb(255, 255, 255);
+            
+        }
+
+       
+
+        .header a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+
+        .header a.active {
+            font-weight: bold;
+        }
+
+      
+    </style>
 </head>
 <body>
     <div class="header">
-      <div class="header-center">
-        <a class="active" href="index.html">Home</a>
-        <a href="soundboard.html">soundboard</a>
-        <a href="guessmynumber.html">guess my number</a>
-      </div>  
+        <div class="header-center">
+            <a class="active" href="index.html">Home</a>
+            <a href="soundboard.html">Soundboard</a>
+            <a href="guessmynumber.html">Guess My Number</a>
+        </div>
     </div>
 
+    <h1>A Soundboard of Mr. Sinclair</h1>
 
-    <h1>A Soundboard of Mr Sinclair</h1>
-  
-   
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            /* Style for the buttons */
-            .button {
-                height: 90px;
-                width: 80px;
-                text-align: center;
-                background-color: #3498db;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-            }
-    
-            /* Additional styles for buttons (optional) */
-            .button:hover {
-                background-color: #2980b9;
-            }
-    
-            /* Define the grid container for buttons */
-            .button-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-                gap: 10px; /* Adjust the gap between buttons */
-            }
-        </style>
-    
-        <script>
-            function play_sound(id) {
-                // Your play_sound function code here
-            }
-        </script>
-    </head>
-    <body>
-        <!-- Wrap the buttons in a container with the grid layout -->
-        <div>
-        <img src = "mr sinclair.png" alt="cliffey" height="35%" width="35%" >
+    <div class="container">
+        <img src="mr sinclair.png" alt="cliffey" >
 
-        <div class="button-container">
+        <div class="button-grid">
             <button id="hi" onClick="play_sound(this.id)" class="button">hi</button>
             <button id="I'm mr sinclair" onClick="play_sound(this.id)" class="button">I'm mr sinclair</button>
             <button id="is" onClick="play_sound(this.id)" class="button">is</button>
@@ -75,11 +63,14 @@
             <button id="thisisexcellence" onClick="play_sound(this.id)" class="button">thisisexcellence.</button>
             <button id="getout" onClick="play_sound(this.id)" class="button">getout</button>
         </div>
-      </div>
-    </body>
-    </html>
-    
-                      
-                          <link rel="stylesheet" type="text/css" href="gridstyle.css"> <!-- Add this line to link your CSS file -->
-                     
-                      
+    </div>
+
+    <script>
+        function play_sound(clicked_id) {
+            var audio = new Audio(clicked_id + ".mp3");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
+
