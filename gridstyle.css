@@ -1,11 +1,11 @@
 .button-grid {
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 40px);
     gap: 10px;
 }
 
-.button {
+button {
     padding: 10px;
     text-align: center;
     background-color: #ffffff;
@@ -14,7 +14,6 @@
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    
 }
 
 .button:hover {
@@ -26,15 +25,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Optional: Set a fixed or relative height for the container to center vertically */
+    height: 2px; 
+
+    /* Optional: Set a fixed or relative height for the container to center vertically */
 }
 
 /* Center the image using margin auto */
-img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    height: 600px;
-    width: 350px;
+
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
+.picpic{
+    margin-bottom: -9cm;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
