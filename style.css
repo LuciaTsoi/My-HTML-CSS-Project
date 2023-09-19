@@ -24,7 +24,7 @@ body {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
    }
    .header a:hover {
     background-color: #ddd;
@@ -48,3 +48,35 @@ body {
       font-style: italic;
     }
 
+.info {
+  font-size:19px ;
+  font-family: monospace;
+}
+
+.center1{text-align: center;
+
+}
+
+.center2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
