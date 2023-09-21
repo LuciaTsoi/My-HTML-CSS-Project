@@ -4,7 +4,8 @@ let remainingAttempts = 3;
 const guessField = document.getElementById("guessField");
 const guessSubmit = document.getElementById("guessSubmit");
 const message = document.getElementById("message");
-const imageContainer = document.getElementById("image-container");
+const imageContainer = document.getElementById("surprise");
+const gif = document.getElementById("gif");
 
 // Initially hide the image
 imageContainer.style.display = "none";
@@ -27,7 +28,23 @@ guessSubmit.addEventListener("click", function () {
       message.textContent = `Wrong guess. Try a ${hint} number. Remaining attempts: ${remainingAttempts}`;
     }
   }
-});
+
+
+}
+)
+
+
+guessSubmit.addEventListener("click", function () {
+  const userGuess = parseInt(guessField.value);
+
+if (userGuess === randomNumber) {
+  message.textContent = "Surprise!!! Hope you like it!";
+  guessSubmit.disabled = true;
+  // Show the image when the guess is correct
+  imageContainer.style.display = "block";}
+}
+)
+
 
 
 

@@ -1,5 +1,6 @@
 .button-grid {
-     display: grid;
+     padding-bottom: 24.5cm;
+    display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 40px);
     gap: 10px;

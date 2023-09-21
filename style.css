@@ -73,6 +73,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .gif{
@@ -82,5 +83,21 @@ body {
 }
 
 .surprise{
-  text-align: center;
+margin-top: 0.4cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.meme1{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.meme2{
+  display: flex;
+  justify-content: right;
+  align-items: right;
 }
