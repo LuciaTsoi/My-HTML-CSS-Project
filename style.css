@@ -101,3 +101,10 @@ margin-top: 0.4cm;
   justify-content: right;
   align-items: right;
 }
+
+.copyright{
+  margin-top: 3.5cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
